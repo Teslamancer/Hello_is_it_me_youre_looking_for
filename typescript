@@ -1,0 +1,874 @@
+Script started on Sat 21 Nov 2015 09:30:56 AM UTC
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rails generate nifty_authentification
+Could not find generator 'nifty_authentification'. Maybe you meant 'test_unit:integration', 'migration' or 'test_unit:generator'
+Run `rails generate --help` for more options.
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rails generate nifty_authentificationsnifty_authentificationcnifty_authentificationanifty_authentificationfnifty_authentificationfnifty_authentificationonifty_authentificationlnifty_authentificationdnifty_authentification nifty_authentification
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20151121093125_create_nifty_authentifications.rb
+[1m[32m      create[0m    app/models/nifty_authentification.rb
+[1m[37m      invoke[0m    test_unit
+[1m[32m      create[0m      test/models/nifty_authentification_test.rb
+[1m[32m      create[0m      test/fixtures/nifty_authentifications.yml
+[1m[37m      invoke[0m  resource_route
+[1m[32m       route[0m    resources :nifty_authentifications
+[1m[37m      invoke[0m  scaffold_controller
+[1m[32m      create[0m    app/controllers/nifty_authentifications_controller.rb
+[1m[37m      invoke[0m    erb
+[1m[32m      create[0m      app/views/nifty_authentifications
+[1m[32m      create[0m      app/views/nifty_authentifications/index.html.erb
+[1m[32m      create[0m      app/views/nifty_authentifications/edit.html.erb
+[1m[32m      create[0m      app/views/nifty_authentifications/show.html.erb
+[1m[32m      create[0m      app/views/nifty_authentifications/new.html.erb
+[1m[32m      create[0m      app/views/nifty_authentifications/_form.html.erb
+[1m[37m      invoke[0m    test_unit
+[1m[32m      create[0m      test/controllers/nifty_authentifications_controller_test.rb
+[1m[37m      invoke[0m    helper
+[1m[32m      create[0m      app/helpers/nifty_authentifications_helper.rb
+[1m[37m      invoke[0m      test_unit
+[1m[37m      invoke[0m    jbuilder
+[1m[32m      create[0m      app/views/nifty_authentifications/index.json.jbuilder
+[1m[32m      create[0m      app/views/nifty_authentifications/show.json.jbuilder
+[1m[37m      invoke[0m  assets
+[1m[37m      invoke[0m    coffee
+[1m[32m      create[0m      app/assets/javascripts/nifty_authentifications.coffee
+[1m[37m      invoke[0m    scss
+[1m[32m      create[0m      app/assets/stylesheets/nifty_authentifications.scss
+[1m[37m      invoke[0m  scss
+[1m[32m      create[0m    app/assets/stylesheets/scaffolds.scss
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rake db_migr[K[K[K[K[K:mgirate
+rake aborted!
+Don't know how to build task 'db:mgirate'
+
+(See full trace by running task with --trace)
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ ^C
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rake db_[K:migrate
+== 20151121093125 CreateNiftyAuthentifications: migrating =====================
+-- create_table(:nifty_authentifications)
+   -> 0.0010s
+== 20151121093125 CreateNiftyAuthentifications: migrated (0.0011s) ============
+
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rails destroy nifty[K[K[K[K[Kscaffold nifty_sau[K[K[Kauthentification
+[1m[37m      invoke[0m  active_record
+[1m[31m      remove[0m    db/migrate/20151121093125_create_nifty_authentifications.rb
+[1m[31m      remove[0m    app/models/nifty_authentification.rb
+[1m[37m      invoke[0m    test_unit
+[1m[31m      remove[0m      test/models/nifty_authentification_test.rb
+[1m[31m      remove[0m      test/fixtures/nifty_authentifications.yml
+[1m[37m      invoke[0m  resource_route
+[1m[31m       route[0m    resources :nifty_authentifications
+[1m[37m      invoke[0m  scaffold_controller
+[1m[31m      remove[0m    app/controllers/nifty_authentifications_controller.rb
+[1m[37m      invoke[0m    erb
+[1m[31m      remove[0m      app/views/nifty_authentifications
+[1m[31m      remove[0m      app/views/nifty_authentifications/index.html.erb
+[1m[31m      remove[0m      app/views/nifty_authentifications/edit.html.erb
+[1m[31m      remove[0m      app/views/nifty_authentifications/show.html.erb
+[1m[31m      remove[0m      app/views/nifty_authentifications/new.html.erb
+[1m[31m      remove[0m      app/views/nifty_authentifications/_form.html.erb
+[1m[37m      invoke[0m    test_unit
+[1m[31m      remove[0m      test/controllers/nifty_authentifications_controller_test.rb
+[1m[37m      invoke[0m    helper
+[1m[31m      remove[0m      app/helpers/nifty_authentifications_helper.rb
+[1m[37m      invoke[0m      test_unit
+[1m[37m      invoke[0m    jbuilder
+[1m[31m      remove[0m      app/views/nifty_authentifications
+[1m[31m      remove[0m      app/views/nifty_authentifications/index.json.jbuilder
+[1m[31m      remove[0m      app/views/nifty_authentifications/show.json.jbuilder
+[1m[37m      invoke[0m  assets
+[1m[37m      invoke[0m    coffee
+[1m[31m      remove[0m      app/assets/javascripts/nifty_authentifications.coffee
+[1m[37m      invoke[0m    scss
+[1m[31m      remove[0m      app/assets/stylesheets/nifty_authentifications.scss
+[1m[37m      invoke[0m  scss
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rails g scaffold authentificaiton
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20151121093212_create_authentificaitons.rb
+[1m[32m      create[0m    app/models/authentificaiton.rb
+[1m[37m      invoke[0m    test_unit
+[1m[32m      create[0m      test/models/authentificaiton_test.rb
+[1m[32m      create[0m      test/fixtures/authentificaitons.yml
+[1m[37m      invoke[0m  resource_route
+[1m[32m       route[0m    resources :authentificaitons
+[1m[37m      invoke[0m  scaffold_controller
+[1m[32m      create[0m    app/controllers/authentificaitons_controller.rb
+[1m[37m      invoke[0m    erb
+[1m[32m      create[0m      app/views/authentificaitons
+[1m[32m      create[0m      app/views/authentificaitons/index.html.erb
+[1m[32m      create[0m      app/views/authentificaitons/edit.html.erb
+[1m[32m      create[0m      app/views/authentificaitons/show.html.erb
+[1m[32m      create[0m      app/views/authentificaitons/new.html.erb
+[1m[32m      create[0m      app/views/authentificaitons/_form.html.erb
+[1m[37m      invoke[0m    test_unit
+[1m[32m      create[0m      test/controllers/authentificaitons_controller_test.rb
+[1m[37m      invoke[0m    helper
+[1m[32m      create[0m      app/helpers/authentificaitons_helper.rb
+[1m[37m      invoke[0m      test_unit
+[1m[37m      invoke[0m    jbuilder
+[1m[32m      create[0m      app/views/authentificaitons/index.json.jbuilder
+[1m[32m      create[0m      app/views/authentificaitons/show.json.jbuilder
+[1m[37m      invoke[0m  assets
+[1m[37m      invoke[0m    coffee
+[1m[32m      create[0m      app/assets/javascripts/authentificaitons.coffee
+[1m[37m      invoke[0m    scss
+[1m[32m      create[0m      app/assets/stylesheets/authentificaitons.scss
+[1m[37m      invoke[0m  scss
+[1m[34m   identical[0m    app/assets/stylesheets/scaffolds.scss
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rails destroy authentificat[Kition[K[K[Kons[K
+Could not find generator 'authentificaiton'. Maybe you meant 'generator', 'migration' or 'test_unit:job'
+Run `rails generate --help` for more options.
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rails destroy authentificaitonsauthentificaitoncauthentificaiton[Cauthentificaitonfauthentificaitonfauthentificaitonoauthentificaitondauthentificaitonlauthentificaiton authentificaiton
+Could not find generator 'scaffodl'. Maybe you meant 'scaffold', 'model' or 'css:scaffold'
+Run `rails generate --help` for more options.
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rails destroy scaffodl authentificaiton[C[C[C[1P[Cd authentificaiton
+[1m[37m      invoke[0m  active_record
+[1m[31m      remove[0m    db/migrate/20151121093212_create_authentificaitons.rb
+[1m[31m      remove[0m    app/models/authentificaiton.rb
+[1m[37m      invoke[0m    test_unit
+[1m[31m      remove[0m      test/models/authentificaiton_test.rb
+[1m[31m      remove[0m      test/fixtures/authentificaitons.yml
+[1m[37m      invoke[0m  resource_route
+[1m[31m       route[0m    resources :authentificaitons
+[1m[37m      invoke[0m  scaffold_controller
+[1m[31m      remove[0m    app/controllers/authentificaitons_controller.rb
+[1m[37m      invoke[0m    erb
+[1m[31m      remove[0m      app/views/authentificaitons
+[1m[31m      remove[0m      app/views/authentificaitons/index.html.erb
+[1m[31m      remove[0m      app/views/authentificaitons/edit.html.erb
+[1m[31m      remove[0m      app/views/authentificaitons/show.html.erb
+[1m[31m      remove[0m      app/views/authentificaitons/new.html.erb
+[1m[31m      remove[0m      app/views/authentificaitons/_form.html.erb
+[1m[37m      invoke[0m    test_unit
+[1m[31m      remove[0m      test/controllers/authentificaitons_controller_test.rb
+[1m[37m      invoke[0m    helper
+[1m[31m      remove[0m      app/helpers/authentificaitons_helper.rb
+[1m[37m      invoke[0m      test_unit
+[1m[37m      invoke[0m    jbuilder
+[1m[31m      remove[0m      app/views/authentificaitons
+[1m[31m      remove[0m      app/views/authentificaitons/index.json.jbuilder
+[1m[31m      remove[0m      app/views/authentificaitons/show.json.jbuilder
+[1m[37m      invoke[0m  assets
+[1m[37m      invoke[0m    coffee
+[1m[31m      remove[0m      app/assets/javascripts/authentificaitons.coffee
+[1m[37m      invoke[0m    scss
+[1m[31m      remove[0m      app/assets/stylesheets/authentificaitons.scss
+[1m[37m      invoke[0m  scss
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rails carete[K[K[K[K[Kreate scaffold authentification
+Error: Command 'create' not recognized
+Usage: rails COMMAND [ARGS]
+
+The most common rails commands are:
+ generate    Generate new code (short-cut alias: "g")
+ console     Start the Rails console (short-cut alias: "c")
+ server      Start the Rails server (short-cut alias: "s")
+ dbconsole   Start a console for the database specified in config/database.yml
+             (short-cut alias: "db")
+ new         Create a new Rails application. "rails new my_app" creates a
+             new application called MyApp in "./my_app"
+
+In addition to those, there are:
+ destroy      Undo code generated with "generate" (short-cut alias: "d")
+ plugin new   Generates skeleton for developing a Rails plugin
+ runner       Run a piece of code in the application environment (short-cut alias: "r")
+
+All commands can be run with -h (or --help) for more information.
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rails create scaffold authentification[C[C[1P[1P[1P[1P[1P[1P[1@g
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20151121093254_create_authentifications.rb
+[1m[32m      create[0m    app/models/authentification.rb
+[1m[37m      invoke[0m    test_unit
+[1m[32m      create[0m      test/models/authentification_test.rb
+[1m[32m      create[0m      test/fixtures/authentifications.yml
+[1m[37m      invoke[0m  resource_route
+[1m[32m       route[0m    resources :authentifications
+[1m[37m      invoke[0m  scaffold_controller
+[1m[32m      create[0m    app/controllers/authentifications_controller.rb
+[1m[37m      invoke[0m    erb
+[1m[32m      create[0m      app/views/authentifications
+[1m[32m      create[0m      app/views/authentifications/index.html.erb
+[1m[32m      create[0m      app/views/authentifications/edit.html.erb
+[1m[32m      create[0m      app/views/authentifications/show.html.erb
+[1m[32m      create[0m      app/views/authentifications/new.html.erb
+[1m[32m      create[0m      app/views/authentifications/_form.html.erb
+[1m[37m      invoke[0m    test_unit
+[1m[32m      create[0m      test/controllers/authentifications_controller_test.rb
+[1m[37m      invoke[0m    helper
+[1m[32m      create[0m      app/helpers/authentifications_helper.rb
+[1m[37m      invoke[0m      test_unit
+[1m[37m      invoke[0m    jbuilder
+[1m[32m      create[0m      app/views/authentifications/index.json.jbuilder
+[1m[32m      create[0m      app/views/authentifications/show.json.jbuilder
+[1m[37m      invoke[0m  assets
+[1m[37m      invoke[0m    coffee
+[1m[32m      create[0m      app/assets/javascripts/authentifications.coffee
+[1m[37m      invoke[0m    scss
+[1m[32m      create[0m      app/assets/stylesheets/authentifications.scss
+[1m[37m      invoke[0m  scss
+[1m[34m   identical[0m    app/assets/stylesheets/scaffolds.scss
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rails g scaffold authentification[5@create[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdestroy scaffold authentificaitondl[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pauthentificaiton[3@g scaffold[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdestroy scaffold nifty_authentification[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cke db:migrate[K
+== 20151121093254 CreateAuthentifications: migrating ==========================
+-- create_table(:authentifications)
+   -> 0.0015s
+== 20151121093254 CreateAuthentifications: migrated (0.0016s) =================
+
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rails g scaffold name:[K[K[K[K[Kprompt [K[K[K[K[K[K[Kquestion name:string description:text
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20151121093355_create_questions.rb
+[1m[32m      create[0m    app/models/question.rb
+[1m[37m      invoke[0m    test_unit
+[1m[32m      create[0m      test/models/question_test.rb
+[1m[32m      create[0m      test/fixtures/questions.yml
+[1m[37m      invoke[0m  resource_route
+[1m[32m       route[0m    resources :questions
+[1m[37m      invoke[0m  scaffold_controller
+[1m[32m      create[0m    app/controllers/questions_controller.rb
+[1m[37m      invoke[0m    erb
+[1m[32m      create[0m      app/views/questions
+[1m[32m      create[0m      app/views/questions/index.html.erb
+[1m[32m      create[0m      app/views/questions/edit.html.erb
+[1m[32m      create[0m      app/views/questions/show.html.erb
+[1m[32m      create[0m      app/views/questions/new.html.erb
+[1m[32m      create[0m      app/views/questions/_form.html.erb
+[1m[37m      invoke[0m    test_unit
+[1m[32m      create[0m      test/controllers/questions_controller_test.rb
+[1m[37m      invoke[0m    helper
+[1m[32m      create[0m      app/helpers/questions_helper.rb
+[1m[37m      invoke[0m      test_unit
+[1m[37m      invoke[0m    jbuilder
+[1m[32m      create[0m      app/views/questions/index.json.jbuilder
+[1m[32m      create[0m      app/views/questions/show.json.jbuilder
+[1m[37m      invoke[0m  assets
+[1m[37m      invoke[0m    coffee
+[1m[32m      create[0m      app/assets/javascripts/questions.coffee
+[1m[37m      invoke[0m    scss
+[1m[32m      create[0m      app/assets/stylesheets/questions.scss
+[1m[37m      invoke[0m  scss
+[1m[34m   identical[0m    app/assets/stylesheets/scaffolds.scss
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rails g scaffold n[Kanswer content:text
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20151121093427_create_answers.rb
+[1m[32m      create[0m    app/models/answer.rb
+[1m[37m      invoke[0m    test_unit
+[1m[32m      create[0m      test/models/answer_test.rb
+[1m[32m      create[0m      test/fixtures/answers.yml
+[1m[37m      invoke[0m  resource_route
+[1m[32m       route[0m    resources :answers
+[1m[37m      invoke[0m  scaffold_controller
+[1m[32m      create[0m    app/controllers/answers_controller.rb
+[1m[37m      invoke[0m    erb
+[1m[32m      create[0m      app/views/answers
+[1m[32m      create[0m      app/views/answers/index.html.erb
+[1m[32m      create[0m      app/views/answers/edit.html.erb
+[1m[32m      create[0m      app/views/answers/show.html.erb
+[1m[32m      create[0m      app/views/answers/new.html.erb
+[1m[32m      create[0m      app/views/answers/_form.html.erb
+[1m[37m      invoke[0m    test_unit
+[1m[32m      create[0m      test/controllers/answers_controller_test.rb
+[1m[37m      invoke[0m    helper
+[1m[32m      create[0m      app/helpers/answers_helper.rb
+[1m[37m      invoke[0m      test_unit
+[1m[37m      invoke[0m    jbuilder
+[1m[32m      create[0m      app/views/answers/index.json.jbuilder
+[1m[32m      create[0m      app/views/answers/show.json.jbuilder
+[1m[37m      invoke[0m  assets
+[1m[37m      invoke[0m    coffee
+[1m[32m      create[0m      app/assets/javascripts/answers.coffee
+[1m[37m      invoke[0m    scss
+[1m[32m      create[0m      app/assets/stylesheets/answers.scss
+[1m[37m      invoke[0m  scss
+[1m[34m   identical[0m    app/assets/stylesheets/scaffolds.scss
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rake _[Kdb:migart[K[K[Krate
+== 20151121093355 CreateQuestions: migrating ==================================
+-- create_table(:questions)
+   -> 0.0015s
+== 20151121093355 CreateQuestions: migrated (0.0016s) =========================
+
+== 20151121093427 CreateAnswers: migrating ====================================
+-- create_table(:answers)
+   -> 0.0008s
+== 20151121093427 CreateAnswers: migrated (0.0010s) ===========================
+
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rails g migratino add_foreign_to_answer forum_[K[K[K[K[K[Kanswer_id:integer
+Could not find generator 'migratino'. Maybe you meant 'migration', 'generator' or 'mailer'
+Run `rails generate --help` for more options.
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rails g migratino add_foreign_to_answer answer_id:integer[C[C[C[1P[1P[1@o[1@n
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20151121094323_add_foreign_to_answer.rb
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rails g migration add_foreign_to_answer answer_id:integer[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P answer_id:integerq answer_id:integeru answer_id:integere answer_id:integers answer_id:integert answer_id:integeri answer_id:integero answer_id:integern answer_id:integer[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pnswer_id:integer[1Pswer_id:integer[1Pwer_id:integer[1Per_id:integer[1Pr_id:integer[1P_id:integerq_id:integeru_id:integere_id:integers_id:integert_id:integeri_id:integero_id:integern_id:integer
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20151121094337_add_foreign_to_question.rb
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rake db:migrate
+== 20151121094323 AddForeignToAnswer: migrating ===============================
+-- add_column(:answers, :answer_id, :integer)
+   -> 0.0007s
+== 20151121094323 AddForeignToAnswer: migrated (0.0008s) ======================
+
+== 20151121094337 AddForeignToQuestion: migrating =============================
+-- add_column(:questions, :question_id, :integer)
+   -> 0.0006s
+== 20151121094337 AddForeignToQuestion: migrated (0.0006s) ====================
+
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ gem
+RubyGems is a sophisticated package manager for Ruby.  This is a
+basic help message containing pointers to more information.
+
+  Usage:
+    gem -h/--help
+    gem -v/--version
+    gem command [arguments...] [options...]
+
+  Examples:
+    gem install rake
+    gem list --local
+    gem build package.gemspec
+    gem help install
+
+  Further help:
+    gem help commands            list all 'gem' commands
+    gem help examples            show some examples of usage
+    gem help gem_dependencies    gem dependencies file guide
+    gem help platforms           gem platforms guide
+    gem help <COMMAND>           show help on COMMAND
+                                   (e.g. 'gem help install')
+    gem server                   present a web page at
+                                 http://localhost:8808/
+                                 with info about installed gems
+  Further information:
+    http://guides.rubygems.org
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ gem help
+RubyGems is a sophisticated package manager for Ruby.  This is a
+basic help message containing pointers to more information.
+
+  Usage:
+    gem -h/--help
+    gem -v/--version
+    gem command [arguments...] [options...]
+
+  Examples:
+    gem install rake
+    gem list --local
+    gem build package.gemspec
+    gem help install
+
+  Further help:
+    gem help commands            list all 'gem' commands
+    gem help examples            show some examples of usage
+    gem help gem_dependencies    gem dependencies file guide
+    gem help platforms           gem platforms guide
+    gem help <COMMAND>           show help on COMMAND
+                                   (e.g. 'gem help install')
+    gem server                   present a web page at
+                                 http://localhost:8808/
+                                 with info about installed gems
+  Further information:
+    http://guides.rubygems.org
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ gemli[K[K list --local
+
+*** LOCAL GEMS ***
+
+actionmailer (4.2.5, 4.2.4)
+actionpack (4.2.5, 4.2.4)
+actionview (4.2.5, 4.2.4)
+activejob (4.2.5, 4.2.4)
+activemodel (4.2.5, 4.2.4)
+activerecord (4.2.5, 4.2.4)
+activesupport (4.2.5, 4.2.4)
+archive-tar-minitar (0.5.2)
+arel (6.0.3)
+bigdecimal (1.2.7, 1.2.6)
+binding_of_caller (0.7.2)
+builder (3.2.2)
+bundler (1.10.6, 1.8.4)
+bundler-unload (1.0.2)
+byebug (8.2.0, 6.0.2)
+chunky_png (1.3.5, 1.3.4)
+coffee-rails (4.1.0)
+coffee-script (2.4.1)
+coffee-script-source (1.10.0, 1.9.1.1)
+commander (4.3.5, 4.3.0, 4.2.1)
+compass (1.0.3, 1.0.1)
+compass-core (1.0.3)
+compass-import-once (1.0.5)
+database (0.0.0)
+debug_inspector (0.0.2)
+erubis (2.7.0)
+execjs (2.6.0)
+executable-hooks (1.3.2)
+ffi (1.9.10)
+gem-wrappers (1.2.7)
+globalid (0.3.6)
+highline (1.7.8, 1.6.21)
+httpclient (2.7.0.1, 2.6.0.1)
+i18n (0.7.0)
+io-console (0.4.3)
+jbuilder (2.3.2)
+jquery-rails (4.0.5)
+json (1.8.3, 1.8.1)
+loofah (2.0.3)
+mail (2.6.3)
+mime-types (2.6.2)
+mini_portile (0.6.2)
+minitest (5.8.3, 5.8.1, 5.4.3)
+multi_json (1.11.2)
+net-scp (1.2.1)
+net-ssh (3.0.1, 2.9.2)
+net-ssh-gateway (1.2.0)
+net-ssh-multi (1.2.1)
+nifty-generators (0.4.6)
+nokogiri (1.6.6.4, 1.6.6.2)
+open4 (1.3.4)
+power_assert (0.2.6, 0.2.2)
+psych (2.0.15, 2.0.8)
+rack (1.6.4)
+rack-test (0.6.3)
+rails (4.2.5, 4.2.4)
+rails-deprecated_sanitizer (1.0.3)
+rails-dom-testing (1.0.7)
+rails-html-sanitizer (1.0.2)
+railties (4.2.5, 4.2.4)
+rake (10.4.2)
+rb-fsevent (0.9.6)
+rb-inotify (0.9.5)
+rdoc (4.2.0)
+rhc (1.38.4, 1.28.5)
+rubygems-bundler (1.4.4)
+rubygems-update (2.5.0)
+rvm (1.11.3.9)
+sass (3.4.19)
+sass-rails (5.0.4)
+sdoc (0.4.1)
+spring (1.4.4, 1.4.0)
+sprockets (3.4.0)
+sprockets-rails (2.3.3)
+sqlite3 (1.3.11)
+test-unit (3.1.5, 3.0.8)
+thor (0.19.1)
+thread_safe (0.3.5)
+tilt (2.0.1)
+turbolinks (2.5.3)
+tzinfo (1.2.2)
+uglifier (2.7.2)
+web-console (2.2.1)
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ gem remove nifty-generators
+ERROR:  While executing gem ... (Gem::CommandLineError)
+    Unknown command remove
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ gem help
+RubyGems is a sophisticated package manager for Ruby.  This is a
+basic help message containing pointers to more information.
+
+  Usage:
+    gem -h/--help
+    gem -v/--version
+    gem command [arguments...] [options...]
+
+  Examples:
+    gem install rake
+    gem list --local
+    gem build package.gemspec
+    gem help install
+
+  Further help:
+    gem help commands            list all 'gem' commands
+    gem help examples            show some examples of usage
+    gem help gem_dependencies    gem dependencies file guide
+    gem help platforms           gem platforms guide
+    gem help <COMMAND>           show help on COMMAND
+                                   (e.g. 'gem help install')
+    gem server                   present a web page at
+                                 http://localhost:8808/
+                                 with info about installed gems
+  Further information:
+    http://guides.rubygems.org
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ [K[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ gem help instlal
+WARNING:  Unknown command instlal.  Try: gem help commands
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ hem [K[K[K[Kgem help install
+Usage: gem install GEMNAME [GEMNAME ...] [options] -- --build-flags [options]
+
+  Options:
+        --platform PLATFORM          Specify the platform of gem to install
+    -v, --version VERSION            Specify version of gem to install
+        --[no-]prerelease            Allow prerelease versions of a gem
+                                     to be installed. (Only for listed gems)
+
+
+  Deprecated Options:
+        --[no-]rdoc                  Generate RDoc for installed gems
+                                     Use --document instead
+        --[no-]ri                    Generate ri data for installed gems.
+                                     Use --document instead
+    -u, --[no-]update-sources        Update local source cache
+
+
+  Install/Update Options:
+    -i, --install-dir DIR            Gem repository directory to get installed
+                                     gems
+    -n, --bindir DIR                 Directory where binary files are
+                                     located
+        --[no-]document [TYPES]      Generate documentation for installed gems
+                                     List the documentation types you wish to
+                                     generate.  For example: rdoc,ri
+        --build-root DIR             Temporary installation root. Useful for building
+                                     packages. Do not use this when installing remote gems.
+        --vendor                     Install gem into the vendor directory.
+                                     Only for use by gem repackagers.
+    -N, --no-document                Disable documentation generation
+    -E, --[no-]env-shebang           Rewrite the shebang line on installed
+                                     scripts to use /usr/bin/env
+    -f, --[no-]force                 Force gem to install, bypassing dependency
+                                     checks
+    -w, --[no-]wrappers              Use bin wrappers for executables
+                                     Not available on dosish platforms
+    -P, --trust-policy POLICY        Specify gem trust policy
+        --ignore-dependencies        Do not install any required dependent gems
+        --[no-]format-executable     Make installed executable names match ruby.
+                                     If ruby is ruby18, foo_exec will be
+                                     foo_exec18
+        --[no-]user-install          Install in user's home directory instead
+                                     of GEM_HOME.
+        --development                Install additional development
+                                     dependencies
+        --development-all            Install development dependencies for all
+                                     gems (including dev deps themselves)
+        --conservative               Don't attempt to upgrade gems already
+                                     meeting version requirement
+        --minimal-deps               Don't upgrade any dependencies that already
+                                     meet version requirements
+    -g, --file [FILE]                Read from a gem dependencies API file and
+                                     install the listed gems
+        --without GROUPS             Omit the named groups (comma separated)
+                                     when installing from a gem dependencies
+                                     file
+        --default                    Add the gem's full specification to
+                                     specifications/default and extract only its bin
+        --explain                    Rather than install the gems, indicate which would
+                                     be installed
+        --[no-]lock                  Create a lock file (when used with -g/--file)
+        --[no-]suggestions           Suggest alternates when gems are not found
+
+
+  Local/Remote Options:
+    -l, --local                      Restrict operations to the LOCAL domain
+    -r, --remote                     Restrict operations to the REMOTE domain
+    -b, --both                       Allow LOCAL and REMOTE operations
+    -B, --bulk-threshold COUNT       Threshold for switching to bulk
+                                     synchronization (default 1000)
+        --clear-sources              Clear the gem sources
+    -s, --source URL                 Append URL to list of remote gem sources
+    -p, --[no-]http-proxy [URL]      Use HTTP proxy for remote operations
+
+
+  Common Options:
+    -h, --help                       Get help on this command
+    -V, --[no-]verbose               Set the verbose level of output
+    -q, --quiet                      Silence commands
+        --config-file FILE           Use this config file instead of default
+        --backtrace                  Show stack backtrace on errors
+        --debug                      Turn on Ruby debugging
+
+
+  Arguments:
+    GEMNAME       name of gem to install
+
+  Summary:
+    Install a gem into the local repository
+
+  Description:
+    The install command installs local or remote gem into a gem repository.
+    
+    For gems with executables ruby installs a wrapper file into the executable
+    directory by default.  This can be overridden with the --no-wrappers option.
+    The wrapper allows you to choose among alternate gem versions using
+    _version_.
+    
+    For example `rake _0.7.3_ --version` will run rake version 0.7.3 if a newer
+    version is also installed.
+    
+    Gem Dependency Files
+    ====================
+    
+    RubyGems can install a consistent set of gems across multiple environments
+    using `gem install -g` when a gem dependencies file (gem.deps.rb, Gemfile or
+    Isolate) is present.  If no explicit file is given RubyGems attempts to find
+    one in the current directory.
+    
+    When the RUBYGEMS_GEMDEPS environment variable is set to a gem dependencies
+    file the gems from that file will be activated at startup time.  Set it to a
+    specific filename or to "-" to have RubyGems automatically discover the gem
+    dependencies file by walking up from the current directory.
+    
+    NOTE: Enabling automatic discovery on multiuser systems can lead to
+    execution of arbitrary code when used from directories outside your control.
+    
+    Extension Install Failures
+    ==========================
+    
+    If an extension fails to compile during gem installation the gem
+    specification is not written out, but the gem remains unpacked in the
+    repository.  You may need to specify the path to the library's headers and
+    libraries to continue.  You can do this by adding a -- between RubyGems'
+    options and the extension's build options:
+    
+      $ gem install some_extension_gem
+      [build fails]
+      Gem files will remain installed in \
+      /path/to/gems/some_extension_gem-1.0 for inspection.
+      Results logged to /path/to/gems/some_extension_gem-1.0/gem_make.out
+      $ gem install some_extension_gem -- --with-extension-lib=/path/to/lib
+      [build succeeds]
+      $ gem list some_extension_gem
+    
+      *** LOCAL GEMS ***
+    
+      some_extension_gem (1.0)
+      $
+    
+    If you correct the compilation errors by editing the gem files you will need
+    to write the specification by hand.  For example:
+    
+      $ gem install some_extension_gem
+      [build fails]
+      Gem files will remain installed in \
+      /path/to/gems/some_extension_gem-1.0 for inspection.
+      Results logged to /path/to/gems/some_extension_gem-1.0/gem_make.out
+      $ [cd /path/to/gems/some_extension_gem-1.0]
+      $ [edit files or what-have-you and run make]
+      $ gem spec ../../cache/some_extension_gem-1.0.gem --ruby > \
+                 ../../specifications/some_extension_gem-1.0.gemspec
+      $ gem list some_extension_gem
+    
+      *** LOCAL GEMS ***
+    
+      some_extension_gem (1.0)
+      $
+
+  Defaults:
+    --both --version '>= 0' --document --no-force
+    --install-dir /usr/local/rvm/gems/ruby-2.2.1 --lock
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ gem --debug
+NOTE:  Debugging mode prints all exceptions even when rescued
+RubyGems is a sophisticated package manager for Ruby.  This is a
+basic help message containing pointers to more information.
+
+  Usage:
+    gem -h/--help
+    gem -v/--version
+    gem command [arguments...] [options...]
+
+  Examples:
+    gem install rake
+    gem list --local
+    gem build package.gemspec
+    gem help install
+
+  Further help:
+    gem help commands            list all 'gem' commands
+    gem help examples            show some examples of usage
+    gem help gem_dependencies    gem dependencies file guide
+    gem help platforms           gem platforms guide
+    gem help <COMMAND>           show help on COMMAND
+                                   (e.g. 'gem help install')
+    gem server                   present a web page at
+                                 http://localhost:8808/
+                                 with info about installed gems
+  Further information:
+    http://guides.rubygems.org
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rails --de ug[K[K[Kbug
+Error: Command '--debug' not recognized
+Usage: rails COMMAND [ARGS]
+
+The most common rails commands are:
+ generate    Generate new code (short-cut alias: "g")
+ console     Start the Rails console (short-cut alias: "c")
+ server      Start the Rails server (short-cut alias: "s")
+ dbconsole   Start a console for the database specified in config/database.yml
+             (short-cut alias: "db")
+ new         Create a new Rails application. "rails new my_app" creates a
+             new application called MyApp in "./my_app"
+
+In addition to those, there are:
+ destroy      Undo code generated with "generate" (short-cut alias: "d")
+ plugin new   Generates skeleton for developing a Rails plugin
+ runner       Run a piece of code in the application environment (short-cut alias: "r")
+
+All commands can be run with -h (or --help) for more information.
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rails server [K[K[K[K[K[K[K [Khelp server
+Usage: rails COMMAND [ARGS]
+
+The most common rails commands are:
+ generate    Generate new code (short-cut alias: "g")
+ console     Start the Rails console (short-cut alias: "c")
+ server      Start the Rails server (short-cut alias: "s")
+ dbconsole   Start a console for the database specified in config/database.yml
+             (short-cut alias: "db")
+ new         Create a new Rails application. "rails new my_app" creates a
+             new application called MyApp in "./my_app"
+
+In addition to those, there are:
+ destroy      Undo code generated with "generate" (short-cut alias: "d")
+ plugin new   Generates skeleton for developing a Rails plugin
+ runner       Run a piece of code in the application environment (short-cut alias: "r")
+
+All commands can be run with -h (or --help) for more information.
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rails -h server
+Usage: rails COMMAND [ARGS]
+
+The most common rails commands are:
+ generate    Generate new code (short-cut alias: "g")
+ console     Start the Rails console (short-cut alias: "c")
+ server      Start the Rails server (short-cut alias: "s")
+ dbconsole   Start a console for the database specified in config/database.yml
+             (short-cut alias: "db")
+ new         Create a new Rails application. "rails new my_app" creates a
+             new application called MyApp in "./my_app"
+
+In addition to those, there are:
+ destroy      Undo code generated with "generate" (short-cut alias: "d")
+ plugin new   Generates skeleton for developing a Rails plugin
+ runner       Run a piece of code in the application environment (short-cut alias: "r")
+
+All commands can be run with -h (or --help) for more information.
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rails server -h
+Usage: rails server [mongrel, thin etc] [options]
+    -p, --port=port                  Runs Rails on the specified port.
+                                     Default: 3000
+    -b, --binding=IP                 Binds Rails to the specified IP.
+                                     Default: localhost
+    -c, --config=file                Uses a custom rackup configuration.
+    -d, --daemon                     Runs server as a Daemon.
+    -u, --debugger                   Enables the debugger.
+    -e, --environment=name           Specifies the environment to run this server under (test/development/production).
+                                     Default: development
+    -P, --pid=pid                    Specifies the PID file.
+                                     Default: tmp/pids/server.pid
+
+    -h, --help                       Shows this help message.
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rails server -u
+=> Notice: debugger option is ignored since Ruby 2.0 and it will be removed in future versions.
+=> Booting WEBrick
+=> Rails 4.2.4 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+Exiting
+/home/ubuntu/workspace/config/routes.rb:5:in `block in <top (required)>': undefined local variable or method `map' for #<ActionDispatch::Routing::Mapper:0x00000004f68570> (NameError)
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/routing/route_set.rb:434:in `instance_exec'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/routing/route_set.rb:434:in `eval_block'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/routing/route_set.rb:412:in `draw'
+	from /home/ubuntu/workspace/config/routes.rb:1:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `block in load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.4/lib/active_support/dependencies.rb:268:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:40:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:40:in `load_paths'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:16:in `reload!'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:26:in `block in updater'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.4/lib/active_support/file_update_checker.rb:75:in `call'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.4/lib/active_support/file_update_checker.rb:75:in `execute'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:27:in `updater'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/application/routes_reloader.rb:7:in `execute_if_updated'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/application/finisher.rb:69:in `block in <module:Finisher>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `instance_exec'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/initializable.rb:30:in `run'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:226:in `block in tsort_each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:348:in `block (2 levels) in each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:429:in `each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:347:in `block in each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `call'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:224:in `tsort_each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:203:in `tsort_each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/initializable.rb:54:in `run_initializers'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/application.rb:352:in `initialize!'
+	from /home/ubuntu/workspace/config/environment.rb:5:in `<top (required)>'
+	from /home/ubuntu/workspace/config.ru:3:in `require'
+	from /home/ubuntu/workspace/config.ru:3:in `block in <main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/builder.rb:55:in `instance_eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/builder.rb:55:in `initialize'
+	from /home/ubuntu/workspace/config.ru:in `new'
+	from /home/ubuntu/workspace/config.ru:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/builder.rb:49:in `eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/builder.rb:49:in `new_from_string'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/builder.rb:40:in `parse_file'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/server.rb:299:in `build_app_and_options_from_config'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/server.rb:208:in `app'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/commands/server.rb:61:in `app'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/server.rb:336:in `wrapped_app'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/commands/server.rb:139:in `log_to_stdout'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/commands/server.rb:78:in `start'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:75:in `tap'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:75:in `server'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/commands.rb:17:in `<top (required)>'
+	from /home/ubuntu/workspace/bin/rails:8:in `require'
+	from /home/ubuntu/workspace/bin/rails:8:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/spring-1.4.0/lib/spring/client/rails.rb:28:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/spring-1.4.0/lib/spring/client/rails.rb:28:in `call'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/spring-1.4.0/lib/spring/client/command.rb:7:in `call'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/spring-1.4.0/lib/spring/client.rb:28:in `run'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/spring-1.4.0/bin/spring:49:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/spring-1.4.0/lib/spring/binstub.rb:11:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/spring-1.4.0/lib/spring/binstub.rb:11:in `<top (required)>'
+	from /home/ubuntu/workspace/bin/spring:13:in `require'
+	from /home/ubuntu/workspace/bin/spring:13:in `<top (required)>'
+	from bin/rails:3:in `load'
+	from bin/rails:3:in `<main>'
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ [K[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rails scaffold
+Error: Command 'scaffold' not recognized
+Usage: rails COMMAND [ARGS]
+
+The most common rails commands are:
+ generate    Generate new code (short-cut alias: "g")
+ console     Start the Rails console (short-cut alias: "c")
+ server      Start the Rails server (short-cut alias: "s")
+ dbconsole   Start a console for the database specified in config/database.yml
+             (short-cut alias: "db")
+ new         Create a new Rails application. "rails new my_app" creates a
+             new application called MyApp in "./my_app"
+
+In addition to those, there are:
+ destroy      Undo code generated with "generate" (short-cut alias: "d")
+ plugin new   Generates skeleton for developing a Rails plugin
+ runner       Run a piece of code in the application environment (short-cut alias: "r")
+
+All commands can be run with -h (or --help) for more information.
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rails --hlelp
+Error: Command '--hlelp' not recognized
+Usage: rails COMMAND [ARGS]
+
+The most common rails commands are:
+ generate    Generate new code (short-cut alias: "g")
+ console     Start the Rails console (short-cut alias: "c")
+ server      Start the Rails server (short-cut alias: "s")
+ dbconsole   Start a console for the database specified in config/database.yml
+             (short-cut alias: "db")
+ new         Create a new Rails application. "rails new my_app" creates a
+             new application called MyApp in "./my_app"
+
+In addition to those, there are:
+ destroy      Undo code generated with "generate" (short-cut alias: "d")
+ plugin new   Generates skeleton for developing a Rails plugin
+ runner       Run a piece of code in the application environment (short-cut alias: "r")
+
+All commands can be run with -h (or --help) for more information.
+[01;32mdogsarereallycool[00m:[01;34m~/workspace[00m $ rails --h[K[K[K[K[K[Kls dbconsole
+SQLite version 3.8.2 2013-12-06 14:53:30
+Enter ".help" for instructions
+Enter SQL statements terminated with a ";"
+sqlite> .ehlp
+Error: unknown command or invalid arguments:  "ehlp". Enter ".help" for help
+sqlite> .help
+.backup ?DB? FILE      Backup DB (default "main") to FILE
+.bail ON|OFF           Stop after hitting an error.  Default OFF
+.databases             List names and files of attached databases
+.dump ?TABLE? ...      Dump the database in an SQL text format
+                         If TABLE specified, only dump tables matching
+                         LIKE pattern TABLE.
+.echo ON|OFF           Turn command echo on or off
+.exit                  Exit this program
+.explain ?ON|OFF?      Turn output mode suitable for EXPLAIN on or off.
+                         With no args, it turns EXPLAIN on.
+.header(s) ON|OFF      Turn display of headers on or off
+.help                

@@ -1,0 +1,24 @@
+<html>
+
+<%= stylesheet_link_tag "application.css" %>
+<p class="nice">Not Classroom</p>
+
+<p id="notice"><%= notice %></p>
+
+    <table>
+        <tr>
+            <th width="80%">Question</th>
+            <th width="20%">Last Answer</th>
+        </tr>
+        <% for question in @questions %>
+            <tr>
+                <td><h3><%= link_to h(question.name), question_path(question.id)%> <br /> <p><%= Answer.count %> posts</p></h3></td>
+                <td class="desc"><%=h question.description %></td>
+                    <td><%= link_to "Show", question %></td>
+                    <td><%= link_to "Edit", edit_question_path(question) %></td>
+                    <td><%= link_to "Destroy", question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+        <% end %>
+    </table>
+    <p><%= link_to "New Question", new_question_path %></p>
+</html>
